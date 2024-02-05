@@ -15,9 +15,8 @@ use App\Http\Controllers\Guest\TrainController as GuestTrainController;
 */
 
 Route::get('/', function () {
- return view('home');
+    return view('pages.home');
 });
-
 
 Route::get('/trains',[GuestTrainController::class, 'index']);
    
