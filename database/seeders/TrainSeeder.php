@@ -22,8 +22,8 @@ class TrainSeeder extends Seeder
             $newTrain->arrival_station = $faker->city();
             $newTrain->departure_time = $faker->time();
             $newTrain->arrival_time = $faker->time();
+            $newTrain->wagons_no = $faker->numberBetween(1,15);
             $newTrain->train_code = $faker->regexify('[A-Za-z0-9]{20}');
-            $newTrain->carriage_nr = $faker->numberBetween(1,30);
             $newTrain->on_time = $faker->boolean(50);
             $newTrain->cancelled = $faker->boolean(10);
             //salviamo il dato (inseriamolo nel DatabaseSeeder)

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Guest\TrainController as GuestTrainController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,3 +19,6 @@ Route::get('/', function () {
 });
 
 
+Route::get('/trains',[GuestTrainController::class, 'index']);
+   
+   
